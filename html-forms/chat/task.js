@@ -7,7 +7,7 @@ chatWidget.addEventListener('click', event => {
 })
 
 document.addEventListener('keydown', event => {
-    if (event.keyCode === 13) {
+    if (event.which === 13) {
         const date = new Date();
         if (chatInput.value !== '') {
             messages.innerHTML += `
